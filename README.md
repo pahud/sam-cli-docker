@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/pahud/sam-cli-docker.svg?branch=master)](https://travis-ci.org/pahud/sam-cli-docker)
+[![GitHub release](https://img.shields.io/github/release/pahud/sam-cli-docker.svg?style=plastic)](https://github.com/pahud/sam-cli-docker/releases)
 
 # sam-cli-docker
 Docker for [AWS SAM CLI](https://github.com/awslabs/aws-sam-cli). You don't need to install anything or resolve any dependency issue in your laptop, just `docker run` it and it just works!
