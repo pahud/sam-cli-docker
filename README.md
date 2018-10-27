@@ -13,4 +13,10 @@ Docker for [AWS SAM CLI](https://github.com/awslabs/aws-sam-cli). You don't need
 
 # Docker Image Autobuilding
 
-The Docker image is [hosted](https://hub.docker.com/r/pahud/aws-sam-cli/) in docker hub as an automated build and will be trigger periodically to make sure it ships with the latest version of AWS SAM CLI.
+The Docker image is [hosted](https://hub.docker.com/r/pahud/aws-sam-cli/) in docker hub as an automated build and will be trigger periodically to make sure it ships with the latest version of AWS SAM CLI. Check the latest [build details](https://hub.docker.com/r/pahud/aws-sam-cli/builds/)
+
+The commands below will help you run the latest `SAM CLI` with docker.
+```
+$ docker pull pahud/aws-sam-cli:latest
+$ docker run -ti pahud/aws-sam-cli:latest sam --version 
+```
