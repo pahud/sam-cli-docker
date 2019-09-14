@@ -8,7 +8,10 @@
 # sam-cli-docker
 Docker for [AWS SAM CLI](https://github.com/awslabs/aws-sam-cli). You don't need to install anything or resolve any dependency issue in your laptop, just `docker run` it and it just works!
 
-![](https://pbs.twimg.com/media/DpHzJYuWkAYsiOh.jpg:large)
+```bash
+$ docker run -ti pahud/aws-sam-cli:latest sam --version                              
+SAM CLI, version 0.21.0
+```
 
 
 # Docker Image Autobuilding
@@ -20,3 +23,4 @@ The commands below will help you run the latest `SAM CLI` with docker.
 $ docker pull pahud/aws-sam-cli:latest
 $ docker run -ti pahud/aws-sam-cli:latest sam --version 
 ```
+
