@@ -1,4 +1,4 @@
-![](https://codebuild.us-west-2.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoialZyT0lSMGZEZ3VnR1NvN2ErZGRaTE13WXFYbE9DWHNiVGsxV0tiRFZrM0sxNjRUWkxKZ2JDQzh1d24xV1crRVljWm5lS2duVE5LaHJQYWwvT1pNanFzPSIsIml2UGFyYW1ldGVyU3BlYyI6IlFseWdXNElIQVd4WEFyTUwiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=master)
+![](https://codebuild.ap-northeast-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiTnRwU2dkREdPWlcyYjFvZmhtd2hvU2NCanlQMmpZb2pFMEdCb2dQTFNOYWVJbUFtOWl1NVoxOWwvejFPOGpTZkJ1SWRrZmc3ek11bmN5TnZMZnNZR0lJPSIsIml2UGFyYW1ldGVyU3BlYyI6InkzUkJGMmdqK2RPckdHYm8iLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=master)
 [![Build Status](https://travis-ci.org/pahud/sam-cli-docker.svg?branch=master)](https://travis-ci.org/pahud/sam-cli-docker)
 [![GitHub release](https://img.shields.io/github/release/pahud/sam-cli-docker.svg?style=plastic)](https://github.com/pahud/sam-cli-docker/releases)
 ![docker image size](https://shields.beevelop.com/docker/image/image-size/pahud/aws-sam-cli/latest.svg?style=plastic)
