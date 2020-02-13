@@ -1,11 +1,11 @@
-FROM linuxbrew/brew
+FROM python:3.8-alpine
 
-RUN brew tap aws/tap; \
-brew install awscli aws-sam-cli
+RUN apk add --no-cache --virtual builddeps gcc musl-dev && \
+   pip --no-cache-dir install aws-sam-cli && \
+   apk del builddeps
 
-# CMD ["/bin/bash"]
-
-RUN	useradd -m -s /bin/bash samcli \
+RUN	adduser -s /bin/bash samcli \
+	--disabled-password \
 	&& echo 'samcli ALL=(ALL) NOPASSWD:ALL' >>/etc/sudoers
 
 USER samcli
