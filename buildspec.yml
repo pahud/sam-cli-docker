@@ -1,0 +1,12 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions: 
+        docker: 18
+  pre_build:
+      commands:
+        - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
+  build:
+      commands:
+        - make all

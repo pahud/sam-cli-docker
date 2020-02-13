@@ -1,6 +1,6 @@
-![](https://codebuild.us-west-2.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoialZyT0lSMGZEZ3VnR1NvN2ErZGRaTE13WXFYbE9DWHNiVGsxV0tiRFZrM0sxNjRUWkxKZ2JDQzh1d24xV1crRVljWm5lS2duVE5LaHJQYWwvT1pNanFzPSIsIml2UGFyYW1ldGVyU3BlYyI6IlFseWdXNElIQVd4WEFyTUwiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=master)
+![](https://codebuild.ap-northeast-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiTnRwU2dkREdPWlcyYjFvZmhtd2hvU2NCanlQMmpZb2pFMEdCb2dQTFNOYWVJbUFtOWl1NVoxOWwvejFPOGpTZkJ1SWRrZmc3ek11bmN5TnZMZnNZR0lJPSIsIml2UGFyYW1ldGVyU3BlYyI6InkzUkJGMmdqK2RPckdHYm8iLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=master)
 [![Build Status](https://travis-ci.org/pahud/sam-cli-docker.svg?branch=master)](https://travis-ci.org/pahud/sam-cli-docker)
-[![GitHub release](https://img.shields.io/github/release/pahud/sam-cli-docker.svg?style=plastic)](https://github.com/pahud/sam-cli-docker/releases)
+[![GitHub release](https://img.shields.io/github/release/awslabs/aws-sam-cli.svg?style=plastic)](https://github.com/awslabs/aws-sam-cli/releases)
 ![docker image size](https://shields.beevelop.com/docker/image/image-size/pahud/aws-sam-cli/latest.svg?style=plastic)
 ![image layers](https://shields.beevelop.com/docker/image/layers/pahud/aws-sam-cli/latest.svg?style=plastic)
 ![image pulls](https://shields.beevelop.com/docker/pulls/pahud/aws-sam-cli.svg?style=plastic)
@@ -10,13 +10,13 @@ Docker for [AWS SAM CLI](https://github.com/awslabs/aws-sam-cli). You don't need
 
 ```bash
 $ docker run -ti pahud/aws-sam-cli:latest sam --version                              
-SAM CLI, version 0.21.0
+SAM CLI, version 0.33.1
 ```
 
 
 # Docker Image Autobuilding
 
-The Docker image is [hosted](https://hub.docker.com/r/pahud/aws-sam-cli/) in docker hub as an automated build and will be trigger periodically to make sure it ships with the latest version of AWS SAM CLI. Check the latest [build details](https://hub.docker.com/r/pahud/aws-sam-cli/builds/)
+The Docker image is [hosted](https://hub.docker.com/r/pahud/aws-sam-cli/) in docker hub as an automated build and will be trigger periodically to make sure it ships with the latest version of AWS SAM CLI. Check the latest [build details](https://hub.docker.com/r/pahud/aws-sam-cli/builds/) or all available [image tags](https://hub.docker.com/r/pahud/aws-sam-cli/tags)
 
 The commands below will help you run the latest `SAM CLI` with docker.
 ```

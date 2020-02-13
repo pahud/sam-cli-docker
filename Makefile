@@ -19,7 +19,7 @@ test:
 	docker run -ti -v $(HOME)/.aws:/home/samcli/.aws $(IMAGE):$(LATEST) sam help
 
 gen-version:
-	docker run -ti pahud/aws-sam-cli:latest sam --version | awk '{print $$NF}' > VERSION
+	docker run pahud/aws-sam-cli:latest sam --version | awk '{print $$NF}' > VERSION
 
 tag-version:
 	docker tag $(IMAGE):$(LATEST) $(IMAGE):$(shell cat VERSION)
