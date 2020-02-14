@@ -10,13 +10,22 @@ Docker for [AWS SAM CLI](https://github.com/awslabs/aws-sam-cli). You don't need
 
 ```bash
 $ docker run -ti pahud/aws-sam-cli:latest sam --version                              
-SAM CLI, version 0.33.1
+SAM CLI, version 0.41.0
+```
+
+# bundle with AWS CLI and Python 3.8 support
+
+```bash
+$ docker run -ti pahud/aws-sam-cli:latest aws --version                                               
+aws-cli/1.17.17 Python/3.8.1 Linux/4.9.184-linuxkit botocore/1.14.17
+$ docker run -ti pahud/aws-sam-cli:latest python --version                                            
+Python 3.8.1
 ```
 
 
-# Docker Image Autobuilding
+# Docker Image Daily Auto Building
 
-The Docker image is [hosted](https://hub.docker.com/r/pahud/aws-sam-cli/) in docker hub as an automated build and will be trigger periodically to make sure it ships with the latest version of AWS SAM CLI. Check the latest [build details](https://hub.docker.com/r/pahud/aws-sam-cli/builds/) or all available [image tags](https://hub.docker.com/r/pahud/aws-sam-cli/tags)
+The Docker image is [hosted](https://hub.docker.com/r/pahud/aws-sam-cli/) in docker hub as an automated build and will be trigger periodically to make sure it always ships the latest version of `SAM CLI` and `AWS CLI`. Check the latest [build details](https://hub.docker.com/r/pahud/aws-sam-cli/builds/) or all available [image tags](https://hub.docker.com/r/pahud/aws-sam-cli/tags)
 
 The commands below will help you run the latest `SAM CLI` with docker.
 ```
