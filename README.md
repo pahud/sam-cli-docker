@@ -10,7 +10,7 @@ Docker for [AWS SAM CLI](https://github.com/awslabs/aws-sam-cli). You don't need
 
 ```bash
 $ docker run -ti pahud/aws-sam-cli:latest sam --version                              
-SAM CLI, version 0.41.0
+SAM CLI, version 0.43.0
 ```
 
 # bundle with AWS CLI and Python 3.8 support
