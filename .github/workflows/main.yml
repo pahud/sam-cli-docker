@@ -3,12 +3,16 @@ name: Daily Docker Image Autobuild
 on:
   schedule:
     - cron:  '11 0 * * *'
+  watch:
+    types: [started]
 
 jobs:
 
   build:
 
     runs-on: ubuntu-latest
+    
+    if: github.actor == github.event.repository.owner.login
 
     steps:
     - uses: actions/checkout@v2
