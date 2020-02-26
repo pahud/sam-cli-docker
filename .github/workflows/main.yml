@@ -16,13 +16,15 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Login to docker hub
-      uses: actions-hub/docker/login@master
-      env:
-        DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
-        DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+#     - name: Login to docker hub
+#       uses: actions-hub/docker/login@master
+#       env:
+#         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+#         DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
     - name: Build and Push the Docker image
-      run: make all
+      run: |
+        docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
+        make all
       env:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
