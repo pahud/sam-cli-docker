@@ -13,10 +13,10 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Initialization
-      with:
+      run: docker login -u $username -p $password
+      env:
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
-    - name: Docker Login
-      run: docker login -u $username -p $password
     - name: Build and Push the Docker image
       run: make all
+      
